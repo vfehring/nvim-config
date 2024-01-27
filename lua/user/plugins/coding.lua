@@ -29,7 +29,7 @@ return {
 
   -- auto completion
   {
-    
+
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
     dependencies = {
@@ -67,6 +67,7 @@ return {
   -- auto pairs
   {
     "echasnovski/mini.pairs",
+    event = "VeryLazy",
     config = function()
       require("mini.pairs").setup({})
     end,
